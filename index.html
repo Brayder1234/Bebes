@@ -22,7 +22,7 @@ if (META_PIXEL_ID && META_PIXEL_ID.indexOf("PIXEL_ID") === -1) {
   document,'script','https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', META_PIXEL_ID);
   fbq('track', 'PageView');
-  fbq('track', 'ViewContent', {content_name:'MegaKit Adiós Pantallas', content_ids:['megakit'], content_type:'product', value:9.90, currency:'USD'});
+  fbq('track', 'ViewContent', {content_name:'MegaKit Adiós Pantallas', content_ids:['megakit'], content_type:'product', value:4.90, currency:'USD'});
 }
 </script>
 <!-- End Meta Pixel -->
@@ -368,7 +368,7 @@ footer .disc{max-width:640px;margin:14px auto 0;font-size:.76rem;line-height:1.6
   <div class="wrap row">
     <div class="brand"><span class="dot">✏️</span> MegaKit Adiós Pantallas</div>
     <div style="display:flex;align-items:center;gap:16px">
-      <div class="price-mini"><s>$25</s> <b>$9,90</b></div>
+      <div class="price-mini"><s>$25</s> <b>$4,90</b></div>
       <a class="btn mini js-buy" href="#comprar">Quiero el kit</a>
     </div>
   </div>
@@ -387,7 +387,7 @@ footer .disc{max-width:640px;margin:14px auto 0;font-size:.76rem;line-height:1.6
         <li><span class="ck">✓</span> Imprime las veces que quieras, para todos tus hijos</li>
       </ul>
       <div class="price-block">
-        <div class="price-now">$9,90 <small>USD</small></div>
+        <div class="price-now">$4,90 <small>USD</small></div>
         <div class="price-was"><s>Antes $25</s></div>
         <span class="tag-off">AHORRAS 61%</span>
       </div>
@@ -535,7 +535,7 @@ footer .disc{max-width:640px;margin:14px auto 0;font-size:.76rem;line-height:1.6
       </div>
       <div class="stack-total">
         <div class="lbl">Hoy pagas</div>
-        <div class="amt"><s>Valor real $52</s><b>$9,90</b></div>
+        <div class="amt"><s>Valor real $52</s><b>$4,90</b></div>
       </div>
       <div class="count">
         <div class="u"><b id="cd-h">23</b><span>Horas</span></div>
@@ -543,7 +543,7 @@ footer .disc{max-width:640px;margin:14px auto 0;font-size:.76rem;line-height:1.6
         <div class="u"><b id="cd-s">59</b><span>Seg</span></div>
       </div>
       <div class="offer-cta">
-        <a class="btn big pulse js-buy" href="#">Sí, quiero mi MegaKit por $9,90 <span class="arw">→</span></a>
+        <a class="btn big pulse js-buy" href="#">Sí, quiero mi MegaKit por $4,90 <span class="arw">→</span></a>
         <div class="fine">🔒 Pago seguro por Hotmart · Recíbelo al instante en tu correo</div>
       </div>
     </div>
@@ -613,7 +613,7 @@ footer .disc{max-width:640px;margin:14px auto 0;font-size:.76rem;line-height:1.6
     <h2>Dale a tu hijo algo mejor que una pantalla</h2>
     <p>Hoy, por el precio de un juguete que se rompe en una semana, le das +300 actividades para aprender jugando toda la niñez.</p>
     <div class="price-block" style="justify-content:center">
-      <div class="price-now">$9,90 <small>USD</small></div>
+      <div class="price-now">$4,90 <small>USD</small></div>
       <div class="price-was"><s>Antes $25</s></div>
       <span class="tag-off">AHORRAS 61%</span>
     </div>
@@ -632,7 +632,7 @@ footer .disc{max-width:640px;margin:14px auto 0;font-size:.76rem;line-height:1.6
 
 <div class="stickybuy">
   <div class="in">
-    <div class="p"><b>$9,90</b><s>$25</s></div>
+    <div class="p"><b>$4,90</b><s>$25</s></div>
     <a class="btn mini js-buy" href="#comprar">Quiero el kit →</a>
   </div>
 </div>
@@ -649,7 +649,7 @@ if(location.protocol==='http:'&&!['localhost','127.0.0.1'].includes(location.hos
 var CHECKOUT_URL = "https://pay.hotmart.com/N106670529X?checkoutMode=10";
 document.querySelectorAll('.js-buy').forEach(function(a){
   a.addEventListener('click', function(e){
-    if(window.fbq){ fbq('track','InitiateCheckout', {content_name:'MegaKit Adiós Pantallas', content_ids:['megakit'], value:9.90, currency:'USD'}); }
+    if(window.fbq){ fbq('track','InitiateCheckout', {content_name:'MegaKit Adiós Pantallas', content_ids:['megakit'], value:4.90, currency:'USD'}); }
     if(CHECKOUT_URL.indexOf('XXXX')!==-1){ return; } // aún sin configurar → hace scroll
     e.preventDefault();
     window.location.href = CHECKOUT_URL;
