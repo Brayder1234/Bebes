@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>MegaKit Adiós Pantallas | 10 cuadernos para que tu hijo aprenda jugando</title>
+<meta name="description" content="10 cuadernos con más de 300 actividades imprimibles para niños de 3 a 8 años. Aleja a tus hijos de las pantallas y ayúdalos a aprender jugando, con lápiz y papel. Descarga inmediata.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23E8654A'/%3E%3Ctext x='50' y='72' font-size='60' text-anchor='middle'%3E%E2%9C%8F%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF8F2;
+  --paper-2:#FFFFFF;
+  --paper-3:#F3EDE1;
+  --ink:#2A251F;
+  --ink-2:#4A4238;
+  --muted:#857B6B;
+  --line:#E7DFD0;
+  --coral:#E8654A;
+  --coral-d:#C64A31;
+  --teal:#1F9C8B;
+  --teal-d:#157668;
+  --amber:#F2A93C;
+  --blue:#3E6FB0;
+  --purple:#7B5EA7;
+  --green:#4E9A3D;
+  --shadow-s:0 4px 14px rgba(60,45,25,.08);
+  --shadow-m:0 14px 40px rgba(60,45,25,.14);
+  --shadow-l:0 26px 70px rgba(60,45,25,.20);
+  --radius:16px;
+  --sans:'Nunito',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --display:'Fredoka','Nunito',sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#211C17; --paper-2:#2B2620; --paper-3:#332C24;
+    --ink:#F4EEE4; --ink-2:#D8CFC0; --muted:#A99E8C; --line:#3C342A;
+    --shadow-s:0 4px 14px rgba(0,0,0,.35);
+    --shadow-m:0 14px 40px rgba(0,0,0,.45);
+    --shadow-l:0 26px 70px rgba(0,0,0,.55);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#211C17; --paper-2:#2B2620; --paper-3:#332C24;
+  --ink:#F4EEE4; --ink-2:#D8CFC0; --muted:#A99E8C; --line:#3C342A;
+  --shadow-s:0 4px 14px rgba(0,0,0,.35);
+  --shadow-m:0 14px 40px rgba(0,0,0,.45);
+  --shadow-l:0 26px 70px rgba(0,0,0,.55);
+}
+:root[data-theme="light"]{
+  --paper:#FBF8F2; --paper-2:#FFFFFF; --paper-3:#F3EDE1;
+  --ink:#2A251F; --ink-2:#4A4238; --muted:#857B6B; --line:#E7DFD0;
+  --shadow-s:0 4px 14px rgba(60,45,25,.08);
+  --shadow-m:0 14px 40px rgba(60,45,25,.14);
+  --shadow-l:0 26px 70px rgba(60,45,25,.20);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.eyebrow{font-family:var(--sans);font-weight:800;font-size:.74rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--coral)}
+.eyebrow.teal{color:var(--teal)}
+
+/* dashed cut divider — motivo de recortable */
+.cut{max-width:1120px;margin:0 auto;height:1px;border-top:2px dashed var(--line);position:relative}
+.cut::before{content:"\2702";position:absolute;left:14px;top:-13px;font-size:20px;color:var(--muted);
+  background:var(--paper);padding:0 6px;transform:scaleX(-1)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---- top urgency bar ---- */
+.promobar{background:var(--coral);color:#fff;text-align:center;font-weight:700;
+  font-size:.86rem;padding:9px 16px;letter-spacing:.01em}
+.promobar b{background:rgba(255,255,255,.22);padding:2px 8px;border-radius:6px;font-variant-numeric:tabular-nums}
+
+/* ---- sticky nav ---- */
+.nav{position:sticky;top:0;z-index:70;background:color-mix(in srgb,var(--paper) 88%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .row{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:1.05rem}
+.brand .dot{width:30px;height:30px;border-radius:9px;background:var(--coral);display:grid;place-items:center;
+  color:#fff;font-size:16px}
+.nav .price-mini{display:flex;align-items:baseline;gap:8px;font-size:.9rem;color:var(--muted)}
+.nav .price-mini s{opacity:.7}
+.nav .price-mini b{font-family:var(--display);color:var(--ink);font-size:1.15rem}
+
+/* ---- buttons ---- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--display);font-weight:600;font-size:1.12rem;
+  background:var(--coral);color:#fff;padding:17px 34px;border-radius:999px;border:0;cursor:pointer;
+  box-shadow:0 10px 26px rgba(232,101,74,.42);transition:transform .16s ease,box-shadow .16s ease;
+  text-align:center;line-height:1.15}
+.btn:hover{transform:translateY(-2px) scale(1.015);box-shadow:0 16px 34px rgba(232,101,74,.5)}
+.btn:active{transform:translateY(0) scale(.99)}
+.btn.mini{padding:11px 20px;font-size:.95rem;box-shadow:0 6px 16px rgba(232,101,74,.4)}
+.btn.big{font-size:1.28rem;padding:20px 44px}
+.btn .arw{transition:transform .16s ease}
+.btn:hover .arw{transform:translateX(4px)}
+.pulse{animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 10px 26px rgba(232,101,74,.42)}50%{box-shadow:0 10px 40px rgba(232,101,74,.7)}}
+@media (prefers-reduced-motion:reduce){.pulse{animation:none}}
+
+/* ---- hero ---- */
+.hero{padding:54px 0 40px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.hero h1{font-size:clamp(2.1rem,5vw,3.5rem);font-weight:700}
+.hero h1 .u{color:var(--coral);position:relative;white-space:nowrap}
+.hero h1 .u::after{content:"";position:absolute;left:0;right:0;bottom:.03em;height:.16em;
+  background:var(--amber);opacity:.55;border-radius:4px;z-index:-1}
+.hero .lead{font-size:1.18rem;color:var(--ink-2);margin:20px 0 8px;max-width:32ch}
+.hero .lead b{color:var(--ink);font-weight:800}
+.checklist{list-style:none;margin:20px 0 26px;display:grid;gap:9px}
+.checklist li{display:flex;align-items:flex-start;gap:10px;font-weight:600;color:var(--ink-2)}
+.checklist .ck{flex:none;width:22px;height:22px;border-radius:50%;background:var(--teal);color:#fff;
+  display:grid;place-items:center;font-size:13px;margin-top:2px}
+.price-block{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:14px}
+.price-now{font-family:var(--display);font-weight:700;font-size:2.7rem;color:var(--ink);line-height:1}
+.price-now small{font-size:1.1rem;color:var(--muted);font-weight:600}
+.price-was{color:var(--muted)}
+.price-was s{font-size:1.15rem}
+.tag-off{background:var(--amber);color:#5a3d08;font-weight:800;font-size:.82rem;
+  padding:5px 11px;border-radius:8px;letter-spacing:.02em}
+.trust-row{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px;color:var(--muted);font-size:.86rem;font-weight:700}
+.trust-row span{display:flex;align-items:center;gap:7px}
+.trust-row .i{color:var(--teal);font-size:1rem}
+
+/* hero fan of covers */
+.fan{position:relative;height:440px;display:grid;place-items:center}
+.fan img{position:absolute;width:230px;border-radius:12px;box-shadow:var(--shadow-l);
+  border:5px solid #fff;background:#fff}
+.fan .c1{transform:rotate(-16deg) translate(-96px,14px)}
+.fan .c2{transform:rotate(-6deg) translate(-34px,-8px)}
+.fan .c3{transform:rotate(4deg) translate(30px,4px);z-index:3}
+.fan .c4{transform:rotate(15deg) translate(96px,20px)}
+.fan .badge{position:absolute;z-index:5;bottom:6px;right:0;background:var(--teal);color:#fff;
+  font-family:var(--display);font-weight:600;border-radius:50%;width:104px;height:104px;
+  display:grid;place-content:center;text-align:center;line-height:1.05;box-shadow:var(--shadow-m);
+  border:4px solid var(--paper);transform:rotate(-8deg)}
+.fan .badge b{font-size:1.7rem;display:block}
+.fan .badge span{font-size:.68rem;letter-spacing:.04em}
+
+/* ---- stat strip ---- */
+.stats{background:var(--paper-3);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats .row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:22px 0;text-align:center}
+.stats .n{font-family:var(--display);font-weight:700;font-size:2rem;color:var(--coral);line-height:1}
+.stats .n.t{color:var(--teal)}.stats .n.b{color:var(--blue)}.stats .n.a{color:var(--amber)}
+.stats .l{font-size:.82rem;color:var(--muted);font-weight:700;margin-top:3px}
+
+/* ---- generic section ---- */
+section.pad{padding:70px 0}
+.section-head{max-width:640px;margin:0 auto 44px;text-align:center}
+.section-head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);margin:12px 0 14px}
+.section-head p{color:var(--ink-2);font-size:1.08rem}
+
+/* ---- problem ---- */
+.problem{background:var(--paper-2)}
+.prob-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}
+.prob-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 26px;box-shadow:var(--shadow-s)}
+.prob-card h3{font-size:1.15rem;margin-bottom:8px}
+.prob-list{list-style:none;display:grid;gap:14px}
+.prob-list li{display:flex;gap:13px;align-items:flex-start;font-size:1.02rem;color:var(--ink-2)}
+.prob-list .x{flex:none;width:26px;height:26px;border-radius:8px;background:#f6e0da;color:var(--coral-d);
+  display:grid;place-items:center;font-weight:800;margin-top:1px}
+.prob-list .ok{background:#dcefe6;color:var(--teal-d)}
+
+/* ---- notebooks grid ---- */
+.books{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.book{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  box-shadow:var(--shadow-s);transition:transform .18s ease,box-shadow .18s ease}
+.book:hover{transform:translateY(-5px);box-shadow:var(--shadow-m)}
+.book img{width:100%;aspect-ratio:17/22;object-fit:cover;object-position:top;border-bottom:1px solid var(--line)}
+.book .meta{padding:11px 13px 14px}
+.book .num{font-family:var(--display);font-weight:700;font-size:.78rem;color:var(--coral)}
+.book .nm{font-family:var(--display);font-weight:600;font-size:.98rem;margin:1px 0 2px;line-height:1.1}
+.book .ct{font-size:.78rem;color:var(--muted);font-weight:700}
+
+/* ---- look inside ---- */
+.inside{background:var(--paper-2)}
+.inside-scroll{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(230px,1fr);gap:16px;
+  overflow-x:auto;padding:8px 2px 22px;scroll-snap-type:x mandatory}
+.inside-scroll figure{scroll-snap-align:start;background:var(--paper);border:1px solid var(--line);
+  border-radius:12px;overflow:hidden;box-shadow:var(--shadow-s)}
+.inside-scroll img{width:100%;border-bottom:1px solid var(--line)}
+.inside-scroll figcaption{padding:10px 12px;font-weight:700;font-size:.86rem;color:var(--ink-2)}
+.inside-scroll figcaption span{display:block;font-size:.74rem;color:var(--coral);font-weight:800;
+  text-transform:uppercase;letter-spacing:.06em;margin-bottom:1px}
+
+/* ---- benefits ---- */
+.benes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.bene{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;
+  box-shadow:var(--shadow-s)}
+.bene .ic{width:50px;height:50px;border-radius:13px;display:grid;place-items:center;font-size:24px;
+  margin-bottom:15px;background:#fdeee9;color:var(--coral)}
+.bene:nth-child(2) .ic{background:#dff0ec;color:var(--teal)}
+.bene:nth-child(3) .ic{background:#eae4f4;color:var(--purple)}
+.bene:nth-child(4) .ic{background:#e6eef8;color:var(--blue)}
+.bene:nth-child(5) .ic{background:#fdf0dc;color:#b9821e}
+.bene:nth-child(6) .ic{background:#e3f1de;color:var(--green)}
+.bene h3{font-size:1.14rem;margin-bottom:7px}
+.bene p{color:var(--ink-2);font-size:.98rem}
+
+/* ---- value stack / offer ---- */
+.offer{background:linear-gradient(180deg,var(--paper-3),var(--paper))}
+.offer-card{max-width:680px;margin:0 auto;background:var(--paper-2);border:1px solid var(--line);
+  border-radius:24px;box-shadow:var(--shadow-l);overflow:hidden}
+.offer-card .top{background:var(--teal);color:#fff;text-align:center;padding:22px 20px}
+.offer-card .top .eyebrow{color:#cdeee7}
+.offer-card .top h3{font-size:1.7rem;margin-top:6px;color:#fff}
+.stack{padding:14px 30px 6px}
+.stack .it{display:flex;align-items:center;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
+.stack .it:last-child{border-bottom:0}
+.stack .it .ic{flex:none;width:40px;height:40px;border-radius:11px;background:#fdeee9;color:var(--coral);
+  display:grid;place-items:center;font-size:19px}
+.stack .it .tx{flex:1}
+.stack .it .tx b{font-family:var(--display);font-weight:600;font-size:1.02rem;display:block}
+.stack .it .tx span{font-size:.86rem;color:var(--muted);font-weight:600}
+.stack .it .v{font-family:var(--display);font-weight:600;color:var(--muted);text-decoration:line-through;
+  font-size:.98rem;white-space:nowrap}
+.stack-total{padding:18px 30px 4px;display:flex;justify-content:space-between;align-items:center;
+  border-top:2px solid var(--line);margin-top:4px}
+.stack-total .lbl{font-weight:800;color:var(--ink-2)}
+.stack-total .amt{text-align:right}
+.stack-total .amt s{color:var(--muted);font-weight:700}
+.stack-total .amt b{font-family:var(--display);font-weight:700;font-size:2.3rem;color:var(--coral);display:block;line-height:1}
+.offer-cta{padding:6px 30px 30px;text-align:center}
+.offer-cta .btn{width:100%}
+.offer-cta .fine{margin-top:12px;color:var(--muted);font-size:.84rem;font-weight:700}
+
+/* countdown */
+.count{display:flex;gap:10px;justify-content:center;margin:20px 0 4px}
+.count .u{background:var(--ink);color:var(--paper);border-radius:12px;padding:10px 4px;min-width:64px;text-align:center}
+.count .u b{font-family:var(--display);font-weight:700;font-size:1.7rem;line-height:1;font-variant-numeric:tabular-nums;display:block}
+.count .u span{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;opacity:.8}
+
+/* ---- testimonials ---- */
+.tests{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.test{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);padding:24px;
+  box-shadow:var(--shadow-s)}
+.test .stars{color:var(--amber);font-size:1rem;letter-spacing:2px;margin-bottom:10px}
+.test p{color:var(--ink-2);font-size:.98rem;margin-bottom:16px}
+.test .who{display:flex;align-items:center;gap:11px}
+.test .av{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#fff;
+  font-family:var(--display);font-weight:600;font-size:1.05rem}
+.test .who b{font-family:var(--display);font-weight:600;font-size:.98rem;display:block}
+.test .who span{font-size:.8rem;color:var(--muted);font-weight:700}
+
+/* ---- guarantee ---- */
+.guarantee{background:var(--paper-2)}
+.guar-card{max-width:760px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;
+  background:var(--paper);border:2px solid var(--teal);border-radius:22px;padding:30px 34px;box-shadow:var(--shadow-m)}
+.guar-seal{width:120px;height:120px;border-radius:50%;background:var(--teal);color:#fff;display:grid;
+  place-content:center;text-align:center;line-height:1;box-shadow:var(--shadow-m)}
+.guar-seal b{font-family:var(--display);font-weight:700;font-size:2.5rem;display:block}
+.guar-seal span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;margin-top:3px}
+.guar-card h3{font-size:1.4rem;margin-bottom:8px}
+.guar-card p{color:var(--ink-2)}
+
+/* ---- faq ---- */
+.faq-list{max-width:760px;margin:0 auto;display:grid;gap:12px}
+.faq{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:18px 22px;font-family:var(--display);font-weight:600;
+  font-size:1.05rem;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{flex:none;width:26px;height:26px;border-radius:50%;background:var(--paper-3);color:var(--coral);
+  display:grid;place-items:center;font-size:18px;transition:transform .2s ease}
+.faq[open] summary .pm{transform:rotate(45deg)}
+.faq .a{padding:0 22px 20px;color:var(--ink-2)}
+
+/* ---- final cta ---- */
+.final{background:var(--coral);color:#fff;text-align:center}
+.final h2{color:#fff;font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:14px}
+.final p{color:rgba(255,255,255,.92);font-size:1.1rem;max-width:44ch;margin:0 auto 12px}
+.final .btn{background:#fff;color:var(--coral-d);box-shadow:0 14px 34px rgba(0,0,0,.25)}
+.final .btn:hover{box-shadow:0 20px 44px rgba(0,0,0,.32)}
+.final .fine{margin-top:16px;color:rgba(255,255,255,.85);font-size:.86rem;font-weight:700}
+.final .price-now{color:#fff}.final .price-now small{color:rgba(255,255,255,.8)}
+.final .price-was s{color:rgba(255,255,255,.7)}
+.final .tag-off{background:rgba(255,255,255,.22);color:#fff}
+
+/* ---- footer ---- */
+footer{background:var(--paper);border-top:1px solid var(--line);padding:34px 0;text-align:center;
+  color:var(--muted);font-size:.84rem}
+footer .brand{justify-content:center;margin-bottom:12px;color:var(--ink)}
+footer a{color:var(--teal-d);font-weight:700}
+footer .disc{max-width:640px;margin:14px auto 0;font-size:.76rem;line-height:1.6}
+
+/* ---- sticky mobile buy ---- */
+.stickybuy{position:fixed;left:0;right:0;bottom:0;z-index:80;display:none;
+  background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(10px);
+  border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+.stickybuy .in{display:flex;align-items:center;gap:12px;max-width:1120px;margin:0 auto}
+.stickybuy .p{flex:1}
+.stickybuy .p b{font-family:var(--display);font-weight:700;font-size:1.3rem}
+.stickybuy .p s{color:var(--muted);font-size:.85rem;margin-left:6px}
+.stickybuy .btn{flex:none}
+
+/* ---- responsive ---- */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:20px}
+  .fan{height:360px;order:-1}
+  .fan img{width:180px}
+  .prob-grid{grid-template-columns:1fr}
+  .books{grid-template-columns:repeat(3,1fr)}
+  .benes{grid-template-columns:1fr 1fr}
+  .tests{grid-template-columns:1fr}
+  .stats .row{grid-template-columns:1fr 1fr;gap:18px 8px}
+  .guar-card{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .nav .price-mini{display:none}
+}
+@media (max-width:560px){
+  .books{grid-template-columns:repeat(2,1fr)}
+  .benes{grid-template-columns:1fr}
+  .fan img{width:150px}
+  .fan .c1{transform:rotate(-14deg) translate(-64px,10px)}
+  .fan .c2{transform:rotate(-5deg) translate(-24px,-6px)}
+  .fan .c3{transform:rotate(5deg) translate(22px,2px)}
+  .fan .c4{transform:rotate(13deg) translate(64px,16px)}
+  .fan .badge{width:82px;height:82px}.fan .badge b{font-size:1.3rem}
+  .stickybuy{display:block}
+  .btn.big{font-size:1.1rem;padding:17px 22px}
+  section.pad{padding:52px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="promobar">🔥 OFERTA DE LANZAMIENTO · termina en <b id="promo-time">23:59:59</b> · 61% de descuento solo hoy</div>
+
+<nav class="nav">
+  <div class="wrap row">
+    <div class="brand"><span class="dot">✏️</span> MegaKit Adiós Pantallas</div>
+    <div style="display:flex;align-items:center;gap:16px">
+      <div class="price-mini"><s>$25</s> <b>$9,90</b></div>
+      <a class="btn mini js-buy" href="#comprar">Quiero el kit</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal in">
+      <span class="eyebrow">Para niños de 3 a 8 años</span>
+      <h1>Aleja a tus hijos de las <span class="u">pantallas</span> sin pelear cada tarde</h1>
+      <p class="lead"><b>10 cuadernos</b> con más de <b>300 actividades imprimibles</b> para que tu hijo aprenda jugando — con lápiz y papel, desde casa.</p>
+      <ul class="checklist">
+        <li><span class="ck">✓</span> Descarga inmediata: imprime hoy mismo y empieza en 5 minutos</li>
+        <li><span class="ck">✓</span> Trazos, letras, números, sumas, laberintos, mandalas y mucho más</li>
+        <li><span class="ck">✓</span> Imprime las veces que quieras, para todos tus hijos</li>
+      </ul>
+      <div class="price-block">
+        <div class="price-now">$9,90 <small>USD</small></div>
+        <div class="price-was"><s>Antes $25</s></div>
+        <span class="tag-off">AHORRAS 61%</span>
+      </div>
+      <a class="btn big pulse js-buy" href="#comprar">Descargar mi MegaKit ahora <span class="arw">→</span></a>
+      <div class="trust-row">
+        <span><span class="i">🔒</span> Pago 100% seguro</span>
+        <span><span class="i">↩️</span> Garantía de 7 días</span>
+        <span><span class="i">⚡</span> Acceso inmediato</span>
+      </div>
+    </div>
+    <div class="fan reveal in">
+      <img class="c1" src="megakit-assets/thumb-01.jpg" alt="Cuaderno de trazos">
+      <img class="c2" src="megakit-assets/thumb-03.jpg" alt="Cuaderno de números">
+      <img class="c3" src="megakit-assets/thumb-05.jpg" alt="Cuaderno de laberintos">
+      <img class="c4" src="megakit-assets/thumb-10.jpg" alt="Cuaderno de mandalas">
+      <div class="badge"><b>+300</b><span>actividades</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="wrap row">
+    <div><div class="n">10</div><div class="l">cuadernos temáticos</div></div>
+    <div><div class="n t">+300</div><div class="l">actividades</div></div>
+    <div><div class="n b">3–8</div><div class="l">años de edad</div></div>
+    <div><div class="n a">∞</div><div class="l">impresiones</div></div>
+  </div>
+</div>
+
+<!-- ============ PROBLEM ============ -->
+<section class="pad problem">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">¿Te suena familiar?</span>
+      <h2>La tablet se volvió la niñera… y tú lo sabes</h2>
+      <p>No es tu culpa. Pero cada hora de pantalla de más le resta a tu hijo concentración, imaginación y ganas de aprender. Hay una forma mejor.</p>
+    </div>
+    <div class="prob-grid reveal">
+      <div class="prob-card">
+        <h3>Sin el MegaKit 😟</h3>
+        <ul class="prob-list">
+          <li><span class="x">✕</span> Berrinches cada vez que apagas la tablet</li>
+          <li><span class="x">✕</span> Horas de videos que no le enseñan nada</li>
+          <li><span class="x">✕</span> Buscar actividades sueltas en internet que aburren en 2 minutos</li>
+          <li><span class="x">✕</span> Esa culpa silenciosa de "otra vez pantalla"</li>
+        </ul>
+      </div>
+      <div class="prob-card" style="border-color:var(--teal)">
+        <h3>Con el MegaKit 😄</h3>
+        <ul class="prob-list">
+          <li><span class="x ok">✓</span> Tu hijo pide "otra hoja" en lugar de la tablet</li>
+          <li><span class="x ok">✓</span> Aprende letras, números y lógica sin darse cuenta</li>
+          <li><span class="x ok">✓</span> 15 minutos al día de calma que tú también disfrutas</li>
+          <li><span class="x ok">✓</span> Tranquilidad: está creciendo jugando, no scrolleando</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cut"></div>
+
+<!-- ============ NOTEBOOKS ============ -->
+<section class="pad">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow teal">Lo que recibes</span>
+      <h2>10 cuadernos, un mundo para descubrir</h2>
+      <p>Cada cuaderno está pensado por edad y por habilidad. Imprime solo el que necesites hoy.</p>
+    </div>
+    <div class="books reveal">
+      <div class="book"><img src="megakit-assets/cover-01.jpg" alt="Trazos Mágicos"><div class="meta"><div class="num">01</div><div class="nm">Trazos Mágicos</div><div class="ct">24 actividades · 3-4 años</div></div></div>
+      <div class="book"><img src="megakit-assets/cover-02.jpg" alt="Letras y Vocales"><div class="meta"><div class="num">02</div><div class="nm">Letras y Vocales</div><div class="ct">35 actividades · 4-6 años</div></div></div>
+      <div class="book"><img src="megakit-assets/cover-03.jpg" alt="Números y Conteo"><div class="meta"><div class="num">03</div><div class="nm">Números y Conteo</div><div class="ct">38 actividades · 4-6 años</div></div></div>
+      <div class="book"><img src="megakit-assets/cover-04.jpg" alt="Sumas y Restas"><div class="meta"><div class="num">04</div><div class="nm">Sumas y Restas</div><div class="ct">30 actividades · 5-7 años</div></div></div>
+      <div class="book"><img src="megakit-assets/cover-05.jpg" alt="Laberintos"><div class="meta"><div class="num">05</div><div class="nm">Laberintos</div><div class="ct">36 actividades · 5-8 años</div></div></div>
+      <div class="book"><img src="megakit-assets/cover-06.jpg" alt="Une los Puntos"><div class="meta"><div class="num">06</div><div class="nm">Une los Puntos</div><div class="ct">12 actividades · 5-7 años</div></div></div>
+      <div class="book"><img src="megakit-assets/cover-07.jpg" alt="Sopas de Letras"><div class="meta"><div class="num">07</div><div class="nm">Sopas de Letras</div><div class="ct">15 actividades · 6-8 años</div></div></div>
+      <div class="book"><img src="megakit-assets/cover-08.jpg" alt="Lógica y Patrones"><div class="meta"><div class="num">08</div><div class="nm">Lógica y Patrones</div><div class="ct">34 actividades · 4-8 años</div></div></div>
+      <div class="book"><img src="megakit-assets/cover-09.jpg" alt="Recorta y Colorea"><div class="meta"><div class="num">09</div><div class="nm">Recorta y Colorea</div><div class="ct">16 actividades · 3-6 años</div></div></div>
+      <div class="book"><img src="megakit-assets/cover-10.jpg" alt="Mandalas"><div class="meta"><div class="num">10</div><div class="nm">Mandalas</div><div class="ct">50 actividades · 4-8 años</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOOK INSIDE ============ -->
+<section class="pad inside">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Mira adentro</span>
+      <h2>Estas son páginas reales del kit</h2>
+      <p>Nada de relleno. Cada página está diseñada para imprimir nítida y gastar poca tinta. Desliza para ver 👉</p>
+    </div>
+    <div class="inside-scroll reveal">
+      <figure><img src="megakit-assets/sample-trazos.jpg" alt="Página de trazos"><figcaption><span>Cuaderno 01</span>Trazos guiados con estrella de inicio</figcaption></figure>
+      <figure><img src="megakit-assets/sample-letra.jpg" alt="Página de la letra A"><figcaption><span>Cuaderno 02</span>Cada letra con su dibujo para colorear</figcaption></figure>
+      <figure><img src="megakit-assets/sample-numero.jpg" alt="Página del número"><figcaption><span>Cuaderno 03</span>Traza, cuenta y colorea</figcaption></figure>
+      <figure><img src="megakit-assets/sample-sumas.jpg" alt="Página de sumas"><figcaption><span>Cuaderno 04</span>Sumas con dibujos, sin números abstractos</figcaption></figure>
+      <figure><img src="megakit-assets/sample-laberinto.jpg" alt="Página de laberinto"><figcaption><span>Cuaderno 05</span>Laberintos únicos en 3 niveles</figcaption></figure>
+      <figure><img src="megakit-assets/sample-sopa.jpg" alt="Página de sopa de letras"><figcaption><span>Cuaderno 07</span>Sopas temáticas para leer mejor</figcaption></figure>
+      <figure><img src="megakit-assets/sample-recorta.jpg" alt="Página para recortar"><figcaption><span>Cuaderno 09</span>Colorea, recorta y crea</figcaption></figure>
+      <figure><img src="megakit-assets/sample-mandala.jpg" alt="Página de mandala"><figcaption><span>Cuaderno 10</span>50 mandalas para la calma</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<div class="cut"></div>
+
+<!-- ============ BENEFITS ============ -->
+<section class="pad">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow teal">Por qué funciona</span>
+      <h2>Más que hojas para pintar</h2>
+      <p>Cada actividad desarrolla una habilidad concreta mientras tu hijo se divierte.</p>
+    </div>
+    <div class="benes reveal">
+      <div class="bene"><div class="ic">✏️</div><h3>Prepara la escritura</h3><p>Los trazos y el repaso de letras fortalecen la mano para escribir con confianza.</p></div>
+      <div class="bene"><div class="ic">🧮</div><h3>Enamora de los números</h3><p>Conteo, sumas y restas con dibujos: matemática que se entiende y no asusta.</p></div>
+      <div class="bene"><div class="ic">🧩</div><h3>Entrena la concentración</h3><p>Laberintos, patrones y simetría enseñan a enfocarse y resolver paso a paso.</p></div>
+      <div class="bene"><div class="ic">📖</div><h3>Impulsa la lectura</h3><p>Vocales, sopas de letras y vocabulario temático que amplían su mundo.</p></div>
+      <div class="bene"><div class="ic">✂️</div><h3>Desarrolla motricidad</h3><p>Recortar, colorear y unir puntos afinan la coordinación ojo-mano.</p></div>
+      <div class="bene"><div class="ic">🌈</div><h3>Regala calma</h3><p>50 mandalas y páginas de color para bajar revoluciones sin una pantalla.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFER / VALUE STACK ============ -->
+<section class="pad offer" id="comprar">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">La oferta completa</span>
+      <h2>Todo esto, hoy por menos de un café al mes</h2>
+    </div>
+    <div class="offer-card reveal">
+      <div class="top">
+        <span class="eyebrow">MegaKit Adiós Pantallas</span>
+        <h3>El paquete completo</h3>
+      </div>
+      <div class="stack">
+        <div class="it"><div class="ic">📚</div><div class="tx"><b>10 cuadernos temáticos</b><span>+300 actividades imprimibles, 3 a 8 años</span></div><div class="v">$25</div></div>
+        <div class="it"><div class="ic">👨‍👩‍👧</div><div class="tx"><b>Guía para papás</b><span>La rutina de 15 minutos que crea el hábito</span></div><div class="v">$9</div></div>
+        <div class="it"><div class="ic">🏅</div><div class="tx"><b>3 certificados de logro</b><span>Para premiar y motivar a tu peque</span></div><div class="v">$6</div></div>
+        <div class="it"><div class="ic">♾️</div><div class="tx"><b>Impresiones ilimitadas de por vida</b><span>Para todos tus hijos, una y otra vez</span></div><div class="v">$12</div></div>
+      </div>
+      <div class="stack-total">
+        <div class="lbl">Hoy pagas</div>
+        <div class="amt"><s>Valor real $52</s><b>$9,90</b></div>
+      </div>
+      <div class="count">
+        <div class="u"><b id="cd-h">23</b><span>Horas</span></div>
+        <div class="u"><b id="cd-m">59</b><span>Min</span></div>
+        <div class="u"><b id="cd-s">59</b><span>Seg</span></div>
+      </div>
+      <div class="offer-cta">
+        <a class="btn big pulse js-buy" href="#">Sí, quiero mi MegaKit por $9,90 <span class="arw">→</span></a>
+        <div class="fine">🔒 Pago seguro por Hotmart · Recíbelo al instante en tu correo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="pad">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow teal">Mamás y papás felices</span>
+      <h2>Lo que dicen quienes ya lo usan</h2>
+    </div>
+    <div class="tests reveal">
+      <div class="test">
+        <div class="stars">★★★★★</div>
+        <p>"Mi hija de 5 años ahora pide sus 'hojitas' apenas llega del jardín. Cambiamos la tablet por el lápiz y ni lo notó. Lo mejor que compré este año."</p>
+        <div class="who"><div class="av" style="background:var(--coral)">P</div><div><b>Paola M.</b><span>Mamá de Emma · Bogotá</span></div></div>
+      </div>
+      <div class="test">
+        <div class="stars">★★★★★</div>
+        <p>"Imprimí los laberintos para el viaje y fueron salvavidas. Mis dos hijos entretenidos y aprendiendo. Vale muchísimo más de lo que cuesta."</p>
+        <div class="who"><div class="av" style="background:var(--teal)">J</div><div><b>Jorge R.</b><span>Papá de Mateo y Sofía · Medellín</span></div></div>
+      </div>
+      <div class="test">
+        <div class="stars">★★★★★</div>
+        <p>"Soy maestra y lo uso también en clase. La calidad de las páginas es de material profesional. Los certificados los encantan a los niños."</p>
+        <div class="who"><div class="av" style="background:var(--purple)">D</div><div><b>Diana C.</b><span>Docente y mamá · Cali</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GUARANTEE ============ -->
+<section class="pad guarantee">
+  <div class="wrap">
+    <div class="guar-card reveal">
+      <div class="guar-seal"><b>7</b><span>días</span></div>
+      <div>
+        <h3>Pruébalo sin riesgo durante 7 días</h3>
+        <p>Descarga el kit, imprímelo y úsalo con tu hijo. Si por cualquier razón no es para ustedes, escríbenos dentro de los 7 días y te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones. El riesgo es todo nuestro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="pad">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Antes de comprar</span>
+      <h2>Preguntas frecuentes</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq"><summary>¿Cómo recibo el kit? <span class="pm">+</span></summary><div class="a">Es 100% digital. Apenas completas tu compra, recibes en tu correo el acceso para descargar los 10 cuadernos en PDF. Los guardas en tu celular o computador y los imprimes cuando quieras.</div></details>
+      <details class="faq"><summary>¿Necesito impresora a color? <span class="pm">+</span></summary><div class="a">No. Las páginas están diseñadas para verse perfectas en blanco y negro y gastar poca tinta. De hecho, muchas actividades son para que tu hijo las coloree. Si no tienes impresora, puedes imprimirlas en cualquier papelería por muy poco.</div></details>
+      <details class="faq"><summary>¿Para qué edades sirve? <span class="pm">+</span></summary><div class="a">Para niños de 3 a 8 años. Cada cuaderno indica la edad recomendada, así eliges fácil según el nivel de tu hijo. Crece con él durante varios años.</div></details>
+      <details class="faq"><summary>¿Puedo imprimirlo varias veces? <span class="pm">+</span></summary><div class="a">¡Sí! Lo compras una vez y lo imprimes las veces que quieras, para todos tus hijos, sobrinos o alumnos. Es tuyo de por vida.</div></details>
+      <details class="faq"><summary>¿Es seguro pagar? <span class="pm">+</span></summary><div class="a">Totalmente. El pago se procesa por Hotmart, la plataforma líder de productos digitales en Latinoamérica, con cifrado y protección al comprador. Además tienes 7 días de garantía.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="pad final">
+  <div class="wrap reveal">
+    <h2>Dale a tu hijo algo mejor que una pantalla</h2>
+    <p>Hoy, por el precio de un juguete que se rompe en una semana, le das +300 actividades para aprender jugando toda la niñez.</p>
+    <div class="price-block" style="justify-content:center">
+      <div class="price-now">$9,90 <small>USD</small></div>
+      <div class="price-was"><s>Antes $25</s></div>
+      <span class="tag-off">AHORRAS 61%</span>
+    </div>
+    <a class="btn big js-buy" href="#">Descargar mi MegaKit ahora <span class="arw">→</span></a>
+    <div class="fine">🔒 Pago seguro · ↩️ Garantía de 7 días · ⚡ Acceso inmediato</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><span class="dot">✏️</span> MegaKit Adiós Pantallas</div>
+    <div>Aprende jugando · sin celular y sin tablet</div>
+    <div class="disc">Este producto es material educativo digital descargable. Los resultados varían según el uso. MegaKit Adiós Pantallas no está afiliado a Meta, Facebook ni Instagram. Al comprar aceptas nuestros términos y política de privacidad.</div>
+  </div>
+</footer>
+
+<div class="stickybuy">
+  <div class="in">
+    <div class="p"><b>$9,90</b><s>$25</s></div>
+    <a class="btn mini js-buy" href="#comprar">Quiero el kit →</a>
+  </div>
+</div>
+
+<script>
+/* === Fuerza HTTPS solo en producción (no rompe el preview local) === */
+if(location.protocol==='http:'&&!['localhost','127.0.0.1'].includes(location.hostname)){
+  location.href=location.href.replace('http:','https:');
+}
+
+/* === Enlace de checkout de Hotmart ===
+   👉 Reemplaza esta URL por la de tu producto cuando lo tengas aprobado.
+   Ejemplo: https://pay.hotmart.com/XXXXXXXXX?checkoutMode=10 */
+var CHECKOUT_URL = "https://pay.hotmart.com/XXXXXXXXX";
+document.querySelectorAll('.js-buy').forEach(function(a){
+  a.addEventListener('click', function(e){
+    if(CHECKOUT_URL.indexOf('XXXX')!==-1){ return; } // aún sin configurar → hace scroll
+    e.preventDefault();
+    window.location.href = CHECKOUT_URL;
+  });
+});
+
+/* === Cuenta regresiva evergreen (se reinicia cada medianoche local) === */
+function tick(){
+  var now=new Date();
+  var end=new Date(now.getFullYear(),now.getMonth(),now.getDate(),23,59,59);
+  var d=Math.max(0,(end-now)/1000);
+  var h=String(Math.floor(d/3600)).padStart(2,'0');
+  var m=String(Math.floor(d%3600/60)).padStart(2,'0');
+  var s=String(Math.floor(d%60)).padStart(2,'0');
+  var pt=document.getElementById('promo-time'); if(pt) pt.textContent=h+':'+m+':'+s;
+  var eh=document.getElementById('cd-h'),em=document.getElementById('cd-m'),es=document.getElementById('cd-s');
+  if(eh){eh.textContent=h;em.textContent=m;es.textContent=s;}
+}
+tick(); setInterval(tick,1000);
+
+/* === Reveal on scroll === */
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
