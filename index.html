@@ -362,13 +362,13 @@ footer .disc{max-width:640px;margin:14px auto 0;font-size:.76rem;line-height:1.6
 </head>
 <body>
 
-<div class="promobar">🔥 OFERTA DE LANZAMIENTO · termina en <b id="promo-time">23:59:59</b> · 61% de descuento solo hoy</div>
+<div class="promobar">🔥 OFERTA DE LANZAMIENTO · termina en <b id="promo-time">23:59:59</b> · 80% de descuento solo hoy</div>
 
 <nav class="nav">
   <div class="wrap row">
     <div class="brand"><span class="dot">✏️</span> MegaKit Adiós Pantallas</div>
     <div style="display:flex;align-items:center;gap:16px">
-      <div class="price-mini"><s>$25</s> <b>$4,90</b></div>
+      <div class="price-mini"><s data-usd="25">$25</s> <b data-usd="4.90">$4,90</b></div>
       <a class="btn mini js-buy" href="#comprar">Quiero el kit</a>
     </div>
   </div>
@@ -387,9 +387,10 @@ footer .disc{max-width:640px;margin:14px auto 0;font-size:.76rem;line-height:1.6
         <li><span class="ck">✓</span> Imprime las veces que quieras, para todos tus hijos</li>
       </ul>
       <div class="price-block">
-        <div class="price-now">$4,90 <small>USD</small></div>
-        <div class="price-was"><s>Antes $25</s></div>
-        <span class="tag-off">AHORRAS 61%</span>
+        <div class="price-now"><span data-usd="4.90">$4,90</span> <small class="js-cur">USD</small></div>
+        <div class="price-was"><s>Antes <span data-usd="25">$25</span></s></div>
+        <span class="tag-off">AHORRAS 80%</span>
+        <div class="js-usd-note" style="flex-basis:100%;width:100%;font-size:12px;opacity:.7;margin-top:6px;display:none"></div>
       </div>
       <a class="btn big pulse js-buy" href="#comprar">Descargar mi MegaKit ahora <span class="arw">→</span></a>
       <div class="trust-row">
@@ -528,14 +529,15 @@ footer .disc{max-width:640px;margin:14px auto 0;font-size:.76rem;line-height:1.6
         <h3>El paquete completo</h3>
       </div>
       <div class="stack">
-        <div class="it"><div class="ic">📚</div><div class="tx"><b>10 cuadernos temáticos</b><span>+300 actividades imprimibles, 3 a 8 años</span></div><div class="v">$25</div></div>
-        <div class="it"><div class="ic">👨‍👩‍👧</div><div class="tx"><b>Guía para papás</b><span>La rutina de 15 minutos que crea el hábito</span></div><div class="v">$9</div></div>
-        <div class="it"><div class="ic">🏅</div><div class="tx"><b>3 certificados de logro</b><span>Para premiar y motivar a tu peque</span></div><div class="v">$6</div></div>
-        <div class="it"><div class="ic">♾️</div><div class="tx"><b>Impresiones ilimitadas de por vida</b><span>Para todos tus hijos, una y otra vez</span></div><div class="v">$12</div></div>
+        <div class="it"><div class="ic">📚</div><div class="tx"><b>10 cuadernos temáticos</b><span>+300 actividades imprimibles, 3 a 8 años</span></div><div class="v" data-usd="25">$25</div></div>
+        <div class="it"><div class="ic">👨‍👩‍👧</div><div class="tx"><b>Guía para papás</b><span>La rutina de 15 minutos que crea el hábito</span></div><div class="v" data-usd="9">$9</div></div>
+        <div class="it"><div class="ic">🏅</div><div class="tx"><b>3 certificados de logro</b><span>Para premiar y motivar a tu peque</span></div><div class="v" data-usd="6">$6</div></div>
+        <div class="it"><div class="ic">♾️</div><div class="tx"><b>Impresiones ilimitadas de por vida</b><span>Para todos tus hijos, una y otra vez</span></div><div class="v" data-usd="12">$12</div></div>
       </div>
       <div class="stack-total">
         <div class="lbl">Hoy pagas</div>
-        <div class="amt"><s>Valor real $52</s><b>$4,90</b></div>
+        <div class="amt"><s>Valor real <span data-usd="52">$52</span></s><b data-usd="4.90">$4,90</b></div>
+        <div class="js-usd-note" style="font-size:12px;opacity:.7;margin-top:6px;display:none"></div>
       </div>
       <div class="count">
         <div class="u"><b id="cd-h">23</b><span>Horas</span></div>
@@ -543,7 +545,7 @@ footer .disc{max-width:640px;margin:14px auto 0;font-size:.76rem;line-height:1.6
         <div class="u"><b id="cd-s">59</b><span>Seg</span></div>
       </div>
       <div class="offer-cta">
-        <a class="btn big pulse js-buy" href="#">Sí, quiero mi MegaKit por $4,90 <span class="arw">→</span></a>
+        <a class="btn big pulse js-buy" href="#">Sí, quiero mi MegaKit por <span data-usd="4.90">$4,90</span> <span class="arw">→</span></a>
         <div class="fine">🔒 Pago seguro por Hotmart · Recíbelo al instante en tu correo</div>
       </div>
     </div>
@@ -613,9 +615,10 @@ footer .disc{max-width:640px;margin:14px auto 0;font-size:.76rem;line-height:1.6
     <h2>Dale a tu hijo algo mejor que una pantalla</h2>
     <p>Hoy, por el precio de un juguete que se rompe en una semana, le das +300 actividades para aprender jugando toda la niñez.</p>
     <div class="price-block" style="justify-content:center">
-      <div class="price-now">$4,90 <small>USD</small></div>
-      <div class="price-was"><s>Antes $25</s></div>
-      <span class="tag-off">AHORRAS 61%</span>
+      <div class="price-now"><span data-usd="4.90">$4,90</span> <small class="js-cur">USD</small></div>
+      <div class="price-was"><s>Antes <span data-usd="25">$25</span></s></div>
+      <span class="tag-off">AHORRAS 80%</span>
+      <div class="js-usd-note" style="flex-basis:100%;width:100%;font-size:12px;opacity:.7;margin-top:6px;display:none"></div>
     </div>
     <a class="btn big js-buy" href="#">Descargar mi MegaKit ahora <span class="arw">→</span></a>
     <div class="fine">🔒 Pago seguro · ↩️ Garantía de 7 días · ⚡ Acceso inmediato</div>
@@ -632,7 +635,7 @@ footer .disc{max-width:640px;margin:14px auto 0;font-size:.76rem;line-height:1.6
 
 <div class="stickybuy">
   <div class="in">
-    <div class="p"><b>$4,90</b><s>$25</s></div>
+    <div class="p"><b data-usd="4.90">$4,90</b><s data-usd="25">$25</s></div>
     <a class="btn mini js-buy" href="#comprar">Quiero el kit →</a>
   </div>
 </div>
@@ -655,6 +658,108 @@ document.querySelectorAll('.js-buy').forEach(function(a){
     window.location.href = CHECKOUT_URL;
   });
 });
+
+/* ============================================================
+   PRECIO EN MONEDA LOCAL
+   - País: geolocalización por IP (sin pedir permiso al usuario)
+   - Tipo de cambio: API gratuita, cacheado 2 h en localStorage
+   - Si algo falla, la página se queda en USD (contenido por defecto)
+   - El pixel SIEMPRE reporta en USD (Meta necesita moneda estable)
+   ============================================================ */
+(function(){
+  var USD_BASE = 4.90;
+  var TTL = 2*60*60*1000; // 2 horas
+
+  // país -> moneda, locale, decimales, paso de redondeo
+  var CUR = {
+    MX:{c:'MXN',l:'es-MX',d:0,step:1},    CO:{c:'COP',l:'es-CO',d:0,step:100},
+    PE:{c:'PEN',l:'es-PE',d:2,step:0.1},  EC:{c:'USD',l:'es-EC',d:2,step:0.01},
+    CL:{c:'CLP',l:'es-CL',d:0,step:100},  AR:{c:'ARS',l:'es-AR',d:0,step:100},
+    UY:{c:'UYU',l:'es-UY',d:0,step:1},    PY:{c:'PYG',l:'es-PY',d:0,step:500},
+    BO:{c:'BOB',l:'es-BO',d:2,step:0.1},  GT:{c:'GTQ',l:'es-GT',d:2,step:0.1},
+    CR:{c:'CRC',l:'es-CR',d:0,step:50},   DO:{c:'DOP',l:'es-DO',d:0,step:5},
+    HN:{c:'HNL',l:'es-HN',d:2,step:0.5},  NI:{c:'NIO',l:'es-NI',d:2,step:0.5},
+    PA:{c:'USD',l:'es-PA',d:2,step:0.01}, SV:{c:'USD',l:'es-SV',d:2,step:0.01},
+    ES:{c:'EUR',l:'es-ES',d:2,step:0.05}, US:{c:'USD',l:'en-US',d:2,step:0.01}
+  };
+
+  function money(cfg, usd, rate){
+    var v = Math.round((usd*rate)/cfg.step)*cfg.step;
+    try{
+      return new Intl.NumberFormat(cfg.l,{style:'currency',currency:cfg.c,
+        minimumFractionDigits:cfg.d, maximumFractionDigits:cfg.d}).format(v);
+    }catch(e){ return cfg.c+' '+v.toFixed(cfg.d); }
+  }
+
+  function paint(cfg, rate){
+    document.querySelectorAll('[data-usd]').forEach(function(el){
+      var u = parseFloat(el.getAttribute('data-usd'));
+      if(isFinite(u)) el.textContent = money(cfg, u, rate);
+    });
+    document.querySelectorAll('.js-cur').forEach(function(e){ e.textContent = cfg.c; });
+    var note = (cfg.c==='USD') ? '' : '≈ USD 4,90 · el cobro se realiza en dólares';
+    document.querySelectorAll('.js-usd-note').forEach(function(e){
+      e.textContent = note;
+      e.style.display = note ? '' : 'none';
+    });
+  }
+
+  function country(){
+    var c=null; try{ c=sessionStorage.getItem('mk_cc'); }catch(e){}
+    if(c) return Promise.resolve(c);
+    return fetch('https://get.geojs.io/v1/ip/country.json',{cache:'no-store'})
+      .then(function(r){ return r.json(); })
+      .then(function(j){ return (j.country||'').toUpperCase(); })
+      .catch(function(){
+        return fetch('https://ipwho.is/').then(function(r){ return r.json(); })
+               .then(function(j){ return (j.country_code||'').toUpperCase(); });
+      })
+      .then(function(cc){
+        if(cc){ try{ sessionStorage.setItem('mk_cc',cc); }catch(e){} }
+        return cc;
+      })
+      .catch(function(){ return ''; });
+  }
+
+  function cache(){
+    try{ var o=JSON.parse(localStorage.getItem('mk_fx')); return (o&&o.rates)?o:null; }catch(e){ return null; }
+  }
+
+  function rates(){
+    var o=cache();
+    if(o && (Date.now()-o.ts) < TTL) return Promise.resolve(o.rates); // fresco (<2h)
+    return fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json')
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        var out={}; for(var k in j.usd) out[k.toUpperCase()]=j.usd[k];
+        if(!out.COP) throw new Error('incompleto');
+        return out;
+      })
+      .catch(function(){
+        return fetch('https://open.er-api.com/v6/latest/USD')
+          .then(function(r){ return r.json(); })
+          .then(function(j){ return j.rates; });
+      })
+      .then(function(r){
+        if(r){ try{ localStorage.setItem('mk_fx', JSON.stringify({ts:Date.now(), rates:r})); }catch(e){} }
+        return r;
+      })
+      .catch(function(){ return o ? o.rates : null; }); // API caída -> usa el último cache
+  }
+
+  function run(){
+    Promise.all([country(), rates()]).then(function(res){
+      var cfg = CUR[res[0]], fx = res[1];
+      if(!cfg || !fx) return;                       // país desconocido -> se queda en USD
+      var rate = (cfg.c==='USD') ? 1 : fx[cfg.c];
+      if(!rate || !isFinite(rate) || rate<=0) return;
+      paint(cfg, rate);
+    }).catch(function(){});
+  }
+
+  run();
+  setInterval(run, TTL); // refresca cada 2 h si la pestaña sigue abierta
+})();
 
 /* === Cuenta regresiva evergreen (se reinicia cada medianoche local) === */
 function tick(){
