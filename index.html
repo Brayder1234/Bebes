@@ -646,7 +646,7 @@ if(location.protocol==='http:'&&!['localhost','127.0.0.1'].includes(location.hos
 /* === Enlace de checkout de Hotmart ===
    👉 Reemplaza esta URL por la de tu producto cuando lo tengas aprobado.
    Ejemplo: https://pay.hotmart.com/XXXXXXXXX?checkoutMode=10 */
-var CHECKOUT_URL = "https://pay.hotmart.com/XXXXXXXXX";
+var CHECKOUT_URL = "https://pay.hotmart.com/N106670529X?checkoutMode=10";
 document.querySelectorAll('.js-buy').forEach(function(a){
   a.addEventListener('click', function(e){
     if(window.fbq){ fbq('track','InitiateCheckout', {content_name:'MegaKit Adiós Pantallas', content_ids:['megakit'], value:9.90, currency:'USD'}); }
